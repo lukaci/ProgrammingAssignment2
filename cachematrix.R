@@ -35,7 +35,9 @@
 ##  - getInverse(): returns the currently cached inverse matrix
 ##  - setInverse(v): sets the currently cached inverse matrix to 'v'
 
-makeCacheMatrix <- function(x = matrix(), i = NULL) {
+makeCacheMatrix <- function(x = matrix()) {
+  i <- NULL
+  
   set <- function(newx) {
     i <<- NULL
     x <<- newx
